@@ -1,0 +1,23 @@
+header{
+    background-color: wheat;
+    height: 200px;
+    .container{
+        @include mid(true);
+        justify-content: space-between;
+        background-color: pink;
+        .logoitem{
+            width: 200px;
+        }
+    }
+}
+@include sm{
+    header{
+        height: 200px;
+        .container{
+            height: 100%;
+        }
+        .logoitem{
+            display: none;
+        }
+    }
+}

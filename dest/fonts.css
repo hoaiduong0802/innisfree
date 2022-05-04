@@ -1,0 +1,81 @@
+/* FONT FACE - font-display: fallback; */
+
+/* VÍ DỤ - tuỳ chỉnh theo từng dự án*/
+
+@font-face {
+    font-family: "ir";
+    src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "im";
+    src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "ib";
+    src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'notoalphal';
+    src: url('../fonts/NotoSansKR-Light-Alphabetic.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Light-Alphabetic.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'notoalpham';
+    src: url('../fonts/NotoSansKR-Medium-Alphabetic.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Medium-Alphabetic.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'notoalphab';
+    src: url('../fonts/NotoSansKR-Bold-Alphabetic.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Bold-Alphabetic.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'notoalphareg';
+    src: url('../fonts/NotoSansKR-Regular-Alphabetic.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Regular-Alphabetic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'notoalphathin';
+    src: url('../fonts/NotoSansKR-Thin-Alphabetic.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Thin-Alphabetic.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'notoalphablack';
+    src: url('../fonts/NotoSansKR-Black-Alphabetic.woff2') format('woff2'),
+        url('../fonts/NotoSansKR-Black-Alphabetic.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: fallback;
+}
