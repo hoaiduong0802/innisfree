@@ -3,7 +3,7 @@
         margin-left: -15px;
         margin-right: -15px;
         height: 50px;
-        background-color: firebrick;
+        background-color: crimson;
         ul{
             @include mid(true);
             justify-content: space-between;
@@ -101,6 +101,8 @@
     background-color: papayawhip;
     opacity: 0;
     visibility: hidden;
+    z-index: 10;
+    @include transition($t);
     ul{
         @include mid(true);
         flex-direction: column;
@@ -117,10 +119,12 @@
         opacity: 1;
         visibility: visible;
         overflow: hidden;
+        @include transition($t);
     }
 }
 .products{
     padding-top: 20px;
+    @include transition($t);
     .container{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -137,6 +141,7 @@
             img{
                 width: 100%;
                 height: 100%;
+                filter: drop-shadow(0 0 0.75rem rgb(157, 233, 157));
             }
         }
         &-content{
@@ -146,6 +151,14 @@
                 color: red;
             }
         }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &.active{
+        display: none;
+        @include transition($t);
+
     }
 }
 @include sm{

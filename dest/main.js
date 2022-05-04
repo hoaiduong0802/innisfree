@@ -1,8 +1,20 @@
 let btnmain = document.querySelector(".navbar .nav .btnmenu")
 let btnBackground = document.querySelector(".backgroundxs")
-
-console.log(btnBackground)
+let bgProducts = document.querySelector(".products")
+let bgfooter = document.querySelector(".footer")
+let btnNav = document.querySelectorAll(".backgroundxs ul li a")
+console.log(btnNav)
 btnmain.addEventListener('click',function(e){
     btnmain.classList.toggle("active")
     btnBackground.classList.toggle('active')
+    bgProducts.classList.toggle('active')
+    bgfooter.classList.toggle('active')
+})
+btnNav.forEach(function(elementNav){
+    elementNav.addEventListener('click',function(){
+        bgProducts.classList.remove('active')
+        btnBackground.classList.remove('active')
+        bgfooter.classList.remove('active')
+        btnmain.classList.remove("active")
+    })
 })
