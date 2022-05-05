@@ -9,7 +9,7 @@
   "keywords": [
     "task"
   ],
-  "author": "Tran Nghia CFD Circle",
+  "author": "HongThai",
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.2.1",
